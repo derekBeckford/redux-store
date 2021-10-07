@@ -35,7 +35,7 @@ function ProductList() {
   }, [data, loading, dispatch]);
 
   function filterProducts() {
-    if (!currentCategory) {
+    if (!currentCategory.length) {
       return state.products;
     }
 
